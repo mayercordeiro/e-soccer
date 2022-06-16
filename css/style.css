@@ -1,0 +1,86 @@
+.grid {
+    display: grid;
+    background-color: #F5F7FC;
+    grid-template-columns: 120px 360px auto;
+    height: 100vh;
+}
+
+/* MENU */
+
+.main-menu:hover, nav.main-menu.expanded {
+    width:280px;
+    overflow:hidden;
+    opacity:1;
+}
+
+.main-menu {
+    background:#F5F7FC;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:120px;
+    overflow:hidden;
+    -webkit-transition:width .2s linear;
+    transition:width .2s linear;
+    box-shadow: 1px 0 12px 8px rgba(0, 0, 0, 40%);
+    opacity:1;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-menu li {
+    width: 120px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#website-logo {
+    margin-left: 10px;
+}
+
+.main-menu li > a {
+    position:relative;
+    width:255px;
+    display:table;
+    border-collapse:collapse;
+    border-spacing:0;
+    color:#333333;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration:none;
+    -webkit-transition:all .14s linear;
+    transition:all .14s linear;
+    font-family: 'Strait', sans-serif;
+    margin-left: 37.5px;
+}
+
+.main-menu .nav-text  {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 32px;
+    font-size: 1.3em;
+}
+
+/* PAINEL DO COMPETIDOR */
+
+.player-panel {
+    background-color: #0080C6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    color: #F5F7FC;
+}
+
+#icon-panel {
+    margin: 51px 0px 10px 0px;
+}
